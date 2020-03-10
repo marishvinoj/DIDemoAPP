@@ -23,12 +23,13 @@ namespace DIDemoAPP.Controllers
         [HttpGet]
         public int Add()
         {
-            return _CalculateManager.Add(1, 2);
+            var res = _CalculateManager.Add(1, 2);
+            return res;
         }
 
         [Route(("LoadCountryList"))]
         [HttpGet]
-        public IEnumerable<string> CountryList()
+        public IList<string> CountryList()
         {
             return _CountryManager.GetCountryList();
         }

@@ -20,9 +20,10 @@ namespace DIDemoAPP.Controllers
 
         [Route(("LoadCountryList"))]
         [HttpGet]
-        public IEnumerable<string> CountryList()
+        public IList<string> CountryList()
         {
-            return _CountryManager.GetCountryList();
+            var res =  _CountryManager.GetCountryList();
+            return res;
         }
 
     }

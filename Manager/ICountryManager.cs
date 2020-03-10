@@ -6,6 +6,6 @@ namespace Manager
 {
     public interface ICountryManager
     {
-        IEnumerable<string> GetCountryList();
+        IList<string> GetCountryList();
     }
 }

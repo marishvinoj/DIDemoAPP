@@ -6,7 +6,7 @@ namespace Manager
 {
     public class CountryManager : ICountryManager
     {
-        public IEnumerable<string> GetCountryList() 
+        public IList<string> GetCountryList() 
             => new string[] { "India", "US" };
     }
 }
